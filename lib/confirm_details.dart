@@ -35,34 +35,24 @@ class ConfirmDetailsScreen extends StatelessWidget {
                 fontSize: 14,
               ),
             ),
-
             const SizedBox(height: 24),
-
             _sectionTitle(context, 'Community Details', 1),
             _labelValue('Community', data['community']),
             _labelValue('Sub-Community', data['subCommunity']),
-
             const SizedBox(height: 24),
-
             _sectionTitle(context, 'Cast Details', 2),
             _labelValue('Cast', data['cast']),
-
             const SizedBox(height: 24),
-
             _sectionTitle(context, 'Personal Details', 3),
             _labelValue('First Name', data['firstName']),
             _labelValue('Middle Name', data['middleName']),
             _labelValue('Last Name', data['lastName']),
             _labelValue('Father / Husband Name', data['guardian']),
             _labelValue('Marital Status', data['maritalStatus']),
-
             const SizedBox(height: 24),
-
             _sectionTitle(context, 'Address Details', 4),
             _labelValue('Address', data['address']),
-
             const SizedBox(height: 36),
-
             SizedBox(
               width: double.infinity,
               height: 55,
@@ -92,7 +82,6 @@ class ConfirmDetailsScreen extends StatelessWidget {
     );
   }
 
-  // ---------------- SECTION TITLE ----------------
   Widget _sectionTitle(BuildContext context, String title, int step) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
@@ -127,7 +116,6 @@ class ConfirmDetailsScreen extends StatelessWidget {
     );
   }
 
-  // ---------------- LABEL + VALUE ----------------
   Widget _labelValue(String label, String? value) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 14),
