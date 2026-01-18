@@ -24,7 +24,7 @@ class ConfirmDetailsScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.fromLTRB(20, 10, 20, 30),
+        padding: const EdgeInsets.fromLTRB(20, 10, 20, 31),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
